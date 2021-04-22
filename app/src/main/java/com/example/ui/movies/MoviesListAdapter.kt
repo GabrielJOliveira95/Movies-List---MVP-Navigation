@@ -20,7 +20,7 @@ class MoviesListAdapter(
     }
 
     class MoviesViewHolder private constructor(private val binding: ItemRecyclerViewBinding) :
-        RecyclerView.ViewHolder(binding.root){
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(result: Result) {
             binding.movieTitle.text = result.title
             binding.movieDescription.text = getGenre(result)
@@ -35,7 +35,7 @@ class MoviesListAdapter(
                 return MoviesViewHolder(binding)
             }
         }
-        }
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder {
         return MoviesViewHolder.from(parent)
