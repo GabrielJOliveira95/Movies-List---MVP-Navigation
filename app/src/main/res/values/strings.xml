@@ -16,4 +16,7 @@
     <string name="logo_erro">logo erro</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img_movie_detail">img_movie_detail</string>
+    <string name="movies_list">Movies List</string>
+    <string name="movie_detail">Movie Detail</string>
 </resources>

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.data.networking.response.similarmovies.Result
 import com.example.data.repository.MoviesRepository
 import com.example.dialogerror.DialogErrorException
+import com.example.extensions.slideWithEffect
 import com.example.ui.R
 import com.example.utils.AppConstants
 import com.squareup.picasso.Picasso
@@ -85,7 +86,7 @@ class MoviesListFragment : Fragment(), MoviesListContract.View,
 
     override fun goToDetailsMovie(result: Result) {
         val bundle = bundleOf("result" to result)
-        findNavController().navigate(R.id.action_moviesListFragment_to_detailsMovieFragment, bundle)
+        findNavController().slideWithEffect(R.id.action_moviesListFragment_to_detailsMovieFragment, bundle)
     }
 
     override fun showLoading(success: Boolean) {

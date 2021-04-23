@@ -19,8 +19,8 @@ class DetailsMovieFragment : Fragment(), ContractDetailsMovie.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         detailMovie =  arguments?.getSerializable("result") as Result
-
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,6 +30,7 @@ class DetailsMovieFragment : Fragment(), ContractDetailsMovie.View {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        showLoading(detailMovie!!)
         initView()
     }
 
@@ -38,6 +39,10 @@ class DetailsMovieFragment : Fragment(), ContractDetailsMovie.View {
         detailMovieTitleTv.text = detailMovie?.title
         detailMovieDescriptionTv.text = detailMovie?.overview
         detailMovieGenreTv.text = getGenre(detailMovie!!)
+    }
+
+    override fun showLoading(result: Result) {
+        if (detailMovie != null) movieDetailPg.visibility = View.GONE
     }
 
     private fun getGenre(similarMovie: Result): String {

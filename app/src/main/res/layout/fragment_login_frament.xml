@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context="com.example.ui.login.LoginFrament">
+    tools:context="com.example.ui.login.LoginFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -63,10 +63,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginLeft="@dimen/horizontal_margin"
             android:layout_marginTop="@dimen/horizontal_margin_small"
             android:layout_marginEnd="@dimen/horizontal_margin"
-            android:layout_marginRight="@dimen/horizontal_margin"
             android:ems="10"
             android:hint="@string/loginScreenLoginTxt"
             android:importantForAutofill="no"
@@ -74,6 +72,7 @@
             android:text="@string/loginScreenLoginTxt"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/loginScreemPasswordEt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

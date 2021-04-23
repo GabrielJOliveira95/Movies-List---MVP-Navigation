@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/loginFrament"
-        android:name="com.example.ui.login.LoginFrament"
-        android:label="fragment_login_frament"
+        android:name="com.example.ui.login.LoginFragment"
+        android:label="Login"
         tools:layout="@layout/fragment_login_frament" >
         <action
             android:id="@+id/action_loginFrament_to_moviesListFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/moviesListFragment"
         android:name="com.example.ui.movies.MoviesListFragment"
-        android:label="fragment_movies_list"
+        android:label="@string/movies_list"
         tools:layout="@layout/fragment_movies_list" >
         <action
             android:id="@+id/action_moviesListFragment_to_detailsMovieFragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/detailsMovieFragment"
         android:name="com.example.ui.details.DetailsMovieFragment"
-        android:label="fragment_details_movie"
+        android:label="@string/movie_detail"
         tools:layout="@layout/fragment_details_movie">
     </fragment>
 </navigation>
